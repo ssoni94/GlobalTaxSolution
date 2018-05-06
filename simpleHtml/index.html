@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Global Tax Solution</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css"/>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links in navbar + footer links
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 400, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+
+      $(window).scroll(function () {
+        $(".slideanim").each(function () {
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 1000) {
+            $(this).addClass("slide");
+          }
+        });
+      });
+    })
+  </script>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10" id="myPage">
+
+</html><nav class="navbar navbar-default navbar-fixed-top" id="myId">
+  <div class="container">
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse " id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li ><a href="#services">SERVICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Global Tax Solutions</h1> 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>About Us</h2><br>
+      
+      <p>We are a full-service independent accounting firm providing a gambit of services for our professional and individual customers. Our services include Accounting & Bookkeeping, Financial statements and Taxation, Auditing and Business consulting services.
+        We understand the unique demands of the industries working in Alberta. We use this understanding and our accounting expertise to help our clients build successful businesses.
+         If you prefer a consultant who believes in fostering a strong relationship with all its clients while emphasizing on accurate and timely delivery, Global Tax Solutions is the right fit for you.
+        Global Tax Solutions over its history has helped small business owners grow their ventures through our personalized approach, trusted advice and efficient service. We assist small and medium businesses in navigating the accounting and tax rules that you need to observe, while keeping you compliant with a host of regulatory requirements.
+        </p>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  
+  
+  <div class="row slideanim mh">
+    <div class="col-sm-4 testoverlay" >
+      <img src="images/BookKeepingAndFinancialStats.jpg"  style="padding-top: 5px">
+      <h4>Bookkeeping Services & Financial Statements</h4>
+      <p>Every business owner, during...</p>
+      <div class="overlay">
+        <div class="text">Every business owner, during the tax filing time every year, is required to report all your revenue
+          and income, as well as all your business expenses. It is difficult to maintain an accurate record
+          of all such records with the busy life as a businessman and can lead to losses. Hence, we do
+          the task for you through electronic solutions so that you focus only on growing your business.</div>
+      </div>
+    </div>
+    <div class="col-sm-4 testoverlay">
+      <img src="images/BusinessIncorporation.jpg" style="padding-top: 5px">
+      <h4>Business Incorporation</h4>
+      <p>CONGRATULATIONS to you if you are planning...</p>
+      <div class="overlay">
+        <div class="text">CONGRATULATIONS to you if you are planning to be your own boss and lead a life on your own terms. We help you to relax in this new journey of life and take the responsibility of incorporating your new company from the scratch.</div>
+      </div>
+    </div>
+    <div class="col-sm-4 testoverlay">
+      <img src="images/Personal&CorporateTaxes.jpg" style="padding-top: 5px">
+      <h4>Corporate & Personal Tax Returns</h4>
+      <p>Legally, every corporate and individual..</p>
+      <div class="overlay">
+        <div class="text">ELegally, every corporate and individual staying in Canada needs to file their tax returns irrespective of their income levels. The process of tax filing is technical and can lead to mistakes which might invite enquiries from CRA. We recommend leaving the process of tax filing to our expert team. We have proven record of optimizing corporate taxes and saving your hard earned money for you.
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim mh">
+    <div class="col-sm-4 testoverlay">
+      <img src="images/PayrollManagement.jpg" style="padding-top: 5px">
+      <h4>Payroll Management</h4>
+      <p>We provide you online solutions..</p>
+      <div class="overlay">
+        <div class="text">We provide you online solutions to maintain your employee database for easier and mobile access to it anywhere at a click of a button. This is an excellent solution for companies with more than 5 employees working for them. This solution helps the company to work out payroll calculations and deductions quicker, generate accurate pay slips, calculate bonuses, expenses, holiday pay, etc with minimum effort, send returns to HMRC and print P45, P60 and other forms for employees, automate certain tasks, such as year-end reporting and reduce the burden of compliance.</div>
+      </div>
+    </div>
+    <div class="col-sm-4 testoverlay">
+      <img src="images/WCB.jpg" style="padding-top: 5px">
+      <h4>WCB Returns</h4>
+      <p>Your employees are your assets..</p>
+      <div class="overlay">
+        <div class="text">Your employees are your assets and you are expected to take good care of them. From the tax filing perspective, you need to report the insurable expenses done on your employees in the current financial year as well as an estimate to for the upcoming year to ensure that you have the correct WCB-Alberta coverage in place. We specialize in this WCB returns to keep you at the top of your game.
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 testoverlay">
+      <img src="images/GST.png" style="padding-top: 5px">
+      <h4 style="color:#303030;">GST Returns</h4>
+      <p>EGovernment of Canada provides you...</p>
+      <div class="overlay">
+        <div class="text">EGovernment of Canada provides you the benefit of paying GST on every transaction you make by giving you a tax credit that reduces your taxable income. We provide this service for all our clients and help them save more in their tax filings.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row slideanim mh">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4 testoverlay">
+      <img src="images/T4.png" style="padding-top: 5px" width="14%">
+      <h4>Preparing T4</h4>
+      <p>Issuing a T4 for your employees..</p>
+      <div class="overlay">
+        <div class="text">Issuing a T4 for your employees is mandatory under the law and it helps in preparing for filing tax returns as well. We help you prepare T4 for you and your employees so that your business remains compliant.
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<html>
